@@ -1,0 +1,32 @@
+name: Fix code style
+
+on:
+  push:
+
+jobs:
+  fix-code-style:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+      - name: Install dependencies
+        run: |
+          composer install --no-interaction --no-progress
+          bun install --frozen-lockfile
+      - name: Run Pint
+        run: vendor/bin/pint
+      - name: Run Prettier
+        run: bunx prettier . --write
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: >
+            chore: fix code style
