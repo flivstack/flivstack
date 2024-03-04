@@ -1,0 +1,9 @@
+*.md
+**/build
+**/vendor
+public/css
+public/js
+composer.lock
+package-lock.json
+storage
+bun.lockb
