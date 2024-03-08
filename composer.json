@@ -9,7 +9,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
-        "filament/filament": "^3.2.44",
+        "filament/filament": "^3.2.45",
         "inertiajs/inertia-laravel": "master",
         "laravel/framework": "^11.0",
         "laravel/tinker": "^2.9",
@@ -18,10 +18,11 @@
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.10.6",
         "fakerphp/faker": "^1.23.1",
+        "larastan/larastan": "^2.9.2",
         "laravel/pint": "^1.14",
         "laravel/sail": "^1.28.2",
         "mockery/mockery": "^1.6.7",
-        "nunomaduro/collision": "^8.1",
+        "nunomaduro/collision": "^8.1.1",
         "pestphp/pest": "^2.34.1",
         "pestphp/pest-plugin-laravel": "^2.3",
         "spatie/laravel-ignition": "^2.4.2"
