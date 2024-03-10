@@ -9,14 +9,14 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
-        "filament/filament": "^3.2.45",
+        "filament/filament": "^3.2.46",
         "inertiajs/inertia-laravel": "master",
         "laravel/framework": "^11.0",
         "laravel/tinker": "^2.9",
         "tightenco/ziggy": "^2.0.4"
     },
     "require-dev": {
-        "barryvdh/laravel-debugbar": "^3.10.6",
+        "barryvdh/laravel-debugbar": "^3.11.0",
         "fakerphp/faker": "^1.23.1",
         "larastan/larastan": "^2.9.2",
         "laravel/pint": "^1.14",
