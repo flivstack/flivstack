@@ -8,9 +8,11 @@
     },
     "devDependencies": {
         "@inertiajs/vue3": "^1.0.15",
+        "@tailwindcss/vite": "^4.0.0-alpha.8",
         "@vitejs/plugin-vue": "^5.0.4",
         "laravel-vite-plugin": "^1.0.2",
         "prettier": "^3.2.5",
+        "tailwindcss": "next",
         "typescript": "^5.4.2",
         "vite": "^5.1.6",
         "vue": "^3.4.21",
