@@ -12,7 +12,7 @@
         "laravel-vite-plugin": "^1.0.2",
         "prettier": "^3.2.5",
         "typescript": "^5.4.2",
-        "vite": "^5.1.5",
+        "vite": "^5.1.6",
         "vue": "^3.4.21",
         "vue-tsc": "^2.0.6",
         "ziggy-js": "^2.0.4"
