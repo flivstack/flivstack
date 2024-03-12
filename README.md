@@ -1,7 +1,7 @@
 # The FLIV stack
 
-* FilamentPHP
-* Laravel
-* Inertia.js
-* Vue.js
-
+* Filament `v3`
+* Laravel `v11`
+* Inertia.js `v1`
+* Vue.js `v3`
+* Tailwind CSS `v4`
