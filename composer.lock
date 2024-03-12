@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "92a763572d02a635f1ec0127188624ab",
+    "content-hash": "6e26b0311f87cd5d4f009698a6f31a68",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -2280,16 +2280,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v11.0.0",
+            "version": "v11.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "6089f679d6d29e6071a6448ed5e96de02e57fedb"
+                "reference": "6e8e343d7c4814c769aa613df4ca3adeaa6de147"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/6089f679d6d29e6071a6448ed5e96de02e57fedb",
-                "reference": "6089f679d6d29e6071a6448ed5e96de02e57fedb",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/6e8e343d7c4814c769aa613df4ca3adeaa6de147",
+                "reference": "6e8e343d7c4814c769aa613df4ca3adeaa6de147",
                 "shasum": ""
             },
             "require": {
@@ -2337,7 +2337,7 @@
                 "voku/portable-ascii": "^2.0"
             },
             "conflict": {
-                "mockery/mockery": ">=1.6.8",
+                "mockery/mockery": "1.6.8",
                 "tightenco/collect": "<5.5.33"
             },
             "provide": {
@@ -2481,7 +2481,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2024-03-12T13:43:31+00:00"
+            "time": "2024-03-12T17:01:20+00:00"
         },
         {
             "name": "laravel/prompts",
@@ -8640,7 +8640,7 @@
         },
         {
             "name": "mockery/mockery",
-            "version": "1.6.7",
+            "version": "1.6.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mockery/mockery.git",
@@ -9751,16 +9751,16 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "10.1.13",
+            "version": "10.1.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "d51c3aec14896d5e80b354fad58e998d1980f8f8"
+                "reference": "e3f51450ebffe8e0efdf7346ae966a656f7d5e5b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/d51c3aec14896d5e80b354fad58e998d1980f8f8",
-                "reference": "d51c3aec14896d5e80b354fad58e998d1980f8f8",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/e3f51450ebffe8e0efdf7346ae966a656f7d5e5b",
+                "reference": "e3f51450ebffe8e0efdf7346ae966a656f7d5e5b",
                 "shasum": ""
             },
             "require": {
@@ -9817,7 +9817,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-code-coverage/issues",
                 "security": "https://github.com/sebastianbergmann/php-code-coverage/security/policy",
-                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/10.1.13"
+                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/10.1.14"
             },
             "funding": [
                 {
@@ -9825,7 +9825,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-03-09T16:54:15+00:00"
+            "time": "2024-03-12T15:33:41+00:00"
         },
         {
             "name": "phpunit/php-file-iterator",
