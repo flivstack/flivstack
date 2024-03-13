@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6e26b0311f87cd5d4f009698a6f31a68",
+    "content-hash": "40866d39dec3ebf6f1e8768bc39a7a20",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -2280,16 +2280,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v11.0.1",
+            "version": "v11.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "6e8e343d7c4814c769aa613df4ca3adeaa6de147"
+                "reference": "efead50a4470068abe47f56e3488a08158039dc3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/6e8e343d7c4814c769aa613df4ca3adeaa6de147",
-                "reference": "6e8e343d7c4814c769aa613df4ca3adeaa6de147",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/efead50a4470068abe47f56e3488a08158039dc3",
+                "reference": "efead50a4470068abe47f56e3488a08158039dc3",
                 "shasum": ""
             },
             "require": {
@@ -2481,7 +2481,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2024-03-12T17:01:20+00:00"
+            "time": "2024-03-12T19:22:44+00:00"
         },
         {
             "name": "laravel/prompts",
@@ -8512,16 +8512,16 @@
         },
         {
             "name": "laravel/sail",
-            "version": "v1.28.2",
+            "version": "v1.29.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/sail.git",
-                "reference": "057777403b8ab79222dcc04983beaab10b6de6a0"
+                "reference": "e40cc7ffb5186c45698dbd47e9477e0e429396d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sail/zipball/057777403b8ab79222dcc04983beaab10b6de6a0",
-                "reference": "057777403b8ab79222dcc04983beaab10b6de6a0",
+                "url": "https://api.github.com/repos/laravel/sail/zipball/e40cc7ffb5186c45698dbd47e9477e0e429396d0",
+                "reference": "e40cc7ffb5186c45698dbd47e9477e0e429396d0",
                 "shasum": ""
             },
             "require": {
@@ -8570,7 +8570,7 @@
                 "issues": "https://github.com/laravel/sail/issues",
                 "source": "https://github.com/laravel/sail"
             },
-            "time": "2024-03-04T14:58:29+00:00"
+            "time": "2024-03-08T16:32:33+00:00"
         },
         {
             "name": "maximebf/debugbar",
