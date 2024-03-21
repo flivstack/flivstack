@@ -1,24 +1,30 @@
-name: Laravel
+name: Tests
 
 on:
   push:
-    branches: ['main']
   pull_request:
-    branches: ['main']
 
 jobs:
   laravel-tests:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: shivammathur/setup-php@v2
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
         with:
           php-version: '8.3'
-      - uses: actions/checkout@v4
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
       - name: Copy .env
         run: php -r "file_exists('.env') || copy('.env.example', '.env');"
       - name: Install Dependencies
-        run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
+        run: |
+          composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
+          bun install --frozen-lockfile
       - name: Generate key
         run: php artisan key:generate
       - name: Directory Permissions
@@ -27,6 +33,8 @@ jobs:
         run: |
           mkdir -p database
           touch database/database.sqlite
+      - name: Build assets
+        run: bun run build
       - name: Execute tests (Unit and Feature tests) via Pest
         env:
           DB_CONNECTION: sqlite
