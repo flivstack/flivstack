@@ -24,7 +24,7 @@ jobs:
       - name: Install dependencies
         run: |
           composer install --no-interaction --no-progress
-          bun install --frozen-lockfile
+          npm ci
       - name: Run Pint
         run: vendor/bin/pint
       - name: Run Prettier
