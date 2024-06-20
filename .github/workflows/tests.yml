@@ -15,16 +15,16 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.3'
-      - name: Setup Bun
-        uses: oven-sh/setup-bun@v1
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          bun-version: latest
+          node-version: latest
       - name: Copy .env
         run: php -r "file_exists('.env') || copy('.env.example', '.env');"
       - name: Install Dependencies
         run: |
           composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
-          bun install --frozen-lockfile
+          npm ci
       - name: Generate key
         run: php artisan key:generate
       - name: Directory Permissions
@@ -34,7 +34,7 @@ jobs:
           mkdir -p database
           touch database/database.sqlite
       - name: Build assets
-        run: bun run build
+        run: npm run build
       - name: Execute tests (Unit and Feature tests) via Pest
         env:
           DB_CONNECTION: sqlite

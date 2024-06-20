@@ -17,10 +17,10 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.3'
-      - name: Setup Bun
-        uses: oven-sh/setup-bun@v1
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          bun-version: latest
+          node-version: latest
       - name: Install dependencies
         run: |
           composer install --no-interaction --no-progress
@@ -28,7 +28,7 @@ jobs:
       - name: Run Pint
         run: vendor/bin/pint
       - name: Run Prettier
-        run: bun run format
+        run: npm run format
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
