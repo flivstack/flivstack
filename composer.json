@@ -18,11 +18,12 @@
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.13.5",
         "fakerphp/faker": "^1.23.1",
+        "laravel/pail": "^1.1",
         "larastan/larastan": "^2.9.7",
         "laravel/pint": "^1.16.1",
         "laravel/sail": "^1.29.3",
         "mockery/mockery": "^1.6.12",
-        "nunomaduro/collision": "^8.1.1",
+        "nunomaduro/collision": "^8.1",
         "pestphp/pest": "^2.34.8",
         "pestphp/pest-plugin-laravel": "^2.4",
         "pestphp/pest-plugin-livewire": "^2.1"
@@ -55,6 +56,10 @@
             "@php artisan key:generate --ansi",
             "@php -r \"file_exists('database/database.sqlite') || touch('database/database.sqlite');\"",
             "@php artisan migrate --graceful --ansi"
+        ],
+        "dev": [
+            "Composer\\Config::disableProcessTimeout",
+            "npx concurrently -k -c \"#93c5fd,#c4b5fd,#d4d4d8,#fdba74\" \"php artisan serve\" \"php artisan queue:listen --tries=1\" \"php artisan pail\" \"npm run dev\" --names=server,queue,logs,vite"
         ]
     },
     "extra": {
